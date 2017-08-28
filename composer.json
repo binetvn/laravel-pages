@@ -16,15 +16,5 @@
         "psr-4" : {
             "BiNet\\Pages\\" : "src/"
         }
-    },
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/binetvn/laravel-app"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/binetvn/php-app"
-        }
-    ]
+    }
 }
