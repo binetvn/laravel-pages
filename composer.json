@@ -1,0 +1,26 @@
+{
+    "name": "binetvn/laravel-pages",
+    "description": "laravel pages manager",
+    "type": "laravel-package",
+    "require": {
+        "php": ">=7.0.4",
+        "laravel-app": "dev-master",
+    },
+    "config": {
+        "platform": {
+            "php": "7.0.4"
+        }
+    },
+    "authors": [
+        {
+            "name": "lbee",
+            "email": "congnv8192@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev-master",
+    "autoload": {
+        "psr-4" : {
+            "BiNet\\Pages\\" : "src/"
+        }
+    }
+}
