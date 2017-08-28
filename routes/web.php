@@ -1,2 +1,7 @@
 <?php
-Route::get('demo', 'DemoController@index');
+
+Route::namespace('Frontend')->group(function () {
+    Route::get('page', 'PageController@index');
+});
+
+

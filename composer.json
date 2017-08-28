@@ -3,13 +3,7 @@
     "description": "laravel pages manager",
     "type": "laravel-package",
     "require": {
-        "php": ">=7.0.4",
-        "laravel-app": "dev-master",
-    },
-    "config": {
-        "platform": {
-            "php": "7.0.4"
-        }
+        "binetvn/laravel-app": "dev-master"
     },
     "authors": [
         {
@@ -17,10 +11,20 @@
             "email": "congnv8192@gmail.com"
         }
     ],
-    "minimum-stability": "dev-master",
+    "minimum-stability": "dev",
     "autoload": {
         "psr-4" : {
             "BiNet\\Pages\\" : "src/"
         }
-    }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/binetvn/laravel-app"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/binetvn/php-app"
+        }
+    ]
 }

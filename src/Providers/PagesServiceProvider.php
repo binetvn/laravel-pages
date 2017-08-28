@@ -20,7 +20,7 @@ class PagesServiceProvider extends ServiceProvider
 
         $this->loadRoutesFrom(__DIR__.'/routes/web.php');
 
-        $this->app->make('BiNet\Pages\Controllers\DemoController');
+        $this->app->make('BiNet\Pages\Controllers\Frontend\PageController');
     }
 
     /**
@@ -32,9 +32,9 @@ class PagesServiceProvider extends ServiceProvider
     {
         # views
         $this->loadViewsFrom(__DIR__.'/views', 'laravel-pages');
-        $this->publishes([
-            __DIR__.'/views' => resource_path('views/vendor/binetvn/laravel-pages'),
-        ]);
+        // $this->publishes([
+        //     __DIR__.'/views' => resource_path('views/vendor/binetvn/laravel-pages'),
+        // ]);
 
         /*# config
         $this->publishes([

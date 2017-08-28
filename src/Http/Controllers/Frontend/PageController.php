@@ -1,5 +1,9 @@
 <?php
 
+namespace BiNet\Pages\Controllers\Frontend;
+
+use Illuminate\Http\Request;
+
 class PageController {
 	private $pageService;
 
@@ -11,13 +15,14 @@ class PageController {
 	 * 	get $page by slug
 	 * 	
 	 */
-	public function show($slug) {
-		try {
-			$page = $pageService->findBySlug($slug);
+	public function show($request, $slug = null) {
+		// try {
+		// 	$page = $pageService->findBySlug($slug);
 			
-			return view('page.show', compact('page'));
-		} catch (NotFoundException $e) {
-			return abort(404);
-		}
+		// 	return view('page.show', compact('page'));
+		// } catch (NotFoundException $e) {
+		// 	return abort(404);
+		// }
+		return 'It works';
 	}
 }

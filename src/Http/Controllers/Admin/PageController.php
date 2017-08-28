@@ -1,6 +1,6 @@
 <?php
 
-namespace BiNet\Pages\Http\Controller\Admin;
+namespace BiNet\Pages\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 
