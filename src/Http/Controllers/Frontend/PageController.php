@@ -3,8 +3,9 @@
 namespace BiNet\Pages\Controllers\Frontend;
 
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
-class PageController {
+class PageController extends Controller {
 	private $pageService;
 
 	/**

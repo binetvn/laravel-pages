@@ -1,6 +1,6 @@
 <?php
 
-namespace BiNet\RBAuthorization;
+namespace BiNet\Pages\Providers;
 
 use Illuminate\Support\ServiceProvider;
 

@@ -2,9 +2,10 @@
 
 namespace BiNet\Pages\Http\Controllers\Admin;
 
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class PageController {
+class PageController extends Controller {
 	// BiNet\Pages\Services\PageService
 	public $service;
 
@@ -14,7 +15,6 @@ class PageController {
 
 	public function index(PageFilter $filter) {
 		$pages = $this->service->query();
-
 	}
 
 	public function create() {

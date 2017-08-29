@@ -11,7 +11,7 @@
             "email": "congnv8192@gmail.com"
         }
     ],
-    "minimum-stability": "dev",
+    "autoload": {"minimum-stability": "dev",
     "autoload": {
         "psr-4" : {
             "BiNet\\Pages\\" : "src/"
