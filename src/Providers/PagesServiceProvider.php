@@ -18,9 +18,10 @@ class PagesServiceProvider extends ServiceProvider
             __DIR__.'/path/to/config/courier.php', 'courier'
         );*/
 
-        $this->loadRoutesFrom(__DIR__.'/routes/web.php');
+        $this->loadRoutesFrom(__DIR__.'\..\..\routes\web.php');
 
-        $this->app->make('BiNet\Pages\Controllers\Frontend\PageController');
+        // $this->app->make('BiNet\Pages\Controllers\Frontend\PageController');
+        $this->app->make('BiNet\Pages\Http\Controllers\Frontend\PageController');
     }
 
     /**
@@ -31,7 +32,7 @@ class PagesServiceProvider extends ServiceProvider
     public function boot()
     {
         # views
-        $this->loadViewsFrom(__DIR__.'/views', 'laravel-pages');
+        $this->loadViewsFrom(__DIR__.'\..\..\resources\views', 'pages');
         // $this->publishes([
         //     __DIR__.'/views' => resource_path('views/vendor/binetvn/laravel-pages'),
         // ]);

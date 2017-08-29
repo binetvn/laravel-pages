@@ -1,6 +1,6 @@
 <?php
 
-namespace BiNet\Pages\Controllers\Frontend;
+namespace BiNet\Pages\Http\Controllers\Frontend;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
